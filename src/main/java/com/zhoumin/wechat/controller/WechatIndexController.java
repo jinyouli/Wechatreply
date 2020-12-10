@@ -27,6 +27,11 @@ public class WechatIndexController {
     @Autowired
     private MessageService messageService;
 
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String getHello(HttpServletRequest request, HttpServletResponse response) {
+        return "hello world";
+    }
+
     @RequestMapping(method = RequestMethod.GET)
     public void get(HttpServletRequest request, HttpServletResponse response) {
         // 微信加密签名，signature结合了开发者填写的token参数和请求中的timestamp参数、nonce参数。
@@ -53,6 +58,8 @@ public class WechatIndexController {
             out = null;
         }
     }
+
+
 
     @RequestMapping(method = RequestMethod.POST)
     public void post(HttpServletRequest request, HttpServletResponse response) {
