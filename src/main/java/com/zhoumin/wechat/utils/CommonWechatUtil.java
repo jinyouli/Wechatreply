@@ -22,7 +22,7 @@ import java.net.URL;
 public class CommonWechatUtil {
     private static Logger log = LoggerFactory.getLogger(CommonWechatUtil.class);
     // 凭证获取（GET）
-    public final static String token_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET";
+    public final static String token_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx1d711815b805d77f&secret=23ca0ddd2b3ee063bcaf39eb4f4a167e";
     /**
      * 发送https请求
      *
