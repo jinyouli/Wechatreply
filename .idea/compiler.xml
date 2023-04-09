@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="wechatpro" target="1.8" />
+      <module name="wechatpro" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
